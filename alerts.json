@@ -1,0 +1,8 @@
+[
+  { "protocol": "TCP", "count": 120, "threat": "Low", "timestamp": "2025-09-30T10:00:00Z" },
+  { "protocol": "UDP", "count": 50, "threat": "Low", "timestamp": "2025-09-30T10:05:00Z" },
+  { "protocol": "ICMP", "count": 10, "threat": "Medium", "timestamp": "2025-09-30T10:15:00Z" },
+  { "protocol": "TCP", "count": 5, "threat": "High", "timestamp": "2025-09-30T10:30:00Z" },
+  { "protocol": "Other", "count": 25, "threat": "Low", "timestamp": "2025-09-30T10:45:00Z" },
+  { "protocol": "UDP", "count": 15, "threat": "Medium", "timestamp": "2025-09-30T11:00:00Z" }
+]

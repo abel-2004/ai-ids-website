@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian AI Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="/landing/index.html" class="logo">Guardian AI</a>
+            <nav>
+                <button id="logout-btn" class="btn btn-secondary">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <h1>Welcome, Admin</h1>
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3>Traffic by Protocol</h3>
+                <canvas id="protocolPieChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Alerts by Threat Level</h3>
+                <canvas id="threatBarChart"></canvas>
+            </div>
+            <div class="chart-card full-width">
+                <h3>Alerts Over Time</h3>
+                <canvas id="timeLineChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="dashboard.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #007BFF;
+    --dark-blue: #0A2540;
+    --background-color: #F8FAFC;
+    --text-primary: #1E293B;
+    --border-color: #E2E8F0;
+    --card-bg: #FFFFFF;
+    --danger-color: #DC3545;
+}
+body { font-family: system-ui, sans-serif; margin: 0; background-color: var(--background-color); color: var(--text-primary); }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* --- Shared Elements --- */
+.navbar { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; }
+.navbar .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--dark-blue); }
+.btn { font-weight: 600; padding: 10px 20px; border-radius: 6px; cursor: pointer; border: none; }
+.btn-primary { background-color: var(--primary-color); color: white; width: 100%; }
+.btn-secondary { background: transparent; border: 1px solid var(--border-color); }
+
+/* --- Login Page --- */
+.login-container { display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+#login-form { background-color: var(--card-bg); padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+.input-group { margin-bottom: 1.5rem; }
+.input-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+.input-group input { width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: 4px; box-sizing: border-box; }
+#error-message { color: var(--danger-color); margin-top: 1rem; text-align: center; }
+
+/* --- Dashboard Page --- */
+.dashboard-container { padding: 2rem 20px; max-width: 1100px; margin: 0 auto; }
+.charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; }
+.chart-card { background-color: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); }
+.full-width { grid-column: 1 / -1; } /* Makes the line chart span the full width */
